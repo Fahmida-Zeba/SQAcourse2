@@ -6,8 +6,8 @@ public class pConstructor {
     static int staticvar = 50;
 
 
-    public void displaymethod(){
-        int localvar= 90;
+    public void displaymethod() {
+        int localvar = 90;
         System.out.println("Local variable: " + localvar);
         System.out.println("Instance variable: " + instancevar);
         System.out.println("Static variable: " + staticvar);
@@ -15,28 +15,26 @@ public class pConstructor {
     }
 
 
-    public pConstructor(){
+    public pConstructor() {
 
         System.out.println("Constructor called here. Instance var is " + instancevar);
 
     }
 
-    public pConstructor(int value){
+    public pConstructor(int value) {
 
         System.out.println("Perameterised constructor is here. Instsance value is " + instancevar);
 
     }
 
     public static void main(String[] args) {
-        pConstructor newobj= new pConstructor();
+        pConstructor newobj = new pConstructor();
         newobj.displaymethod();
 
         System.out.println("----------------------");
-        pConstructor newobj2= new pConstructor(300);
+        pConstructor newobj2 = new pConstructor(300);
         newobj2.displaymethod();
     }
-
-
 
 
 }

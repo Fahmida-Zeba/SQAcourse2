@@ -5,7 +5,7 @@ public class Allvariable {
     int instancevar = 20;
     static int statvar = 30;
 
-    public void method1(){
+    public void method1() {
 
         int localvar1 = 50;
         System.out.println(" Local Variable 1: " + localvar1);
@@ -13,7 +13,7 @@ public class Allvariable {
 
     }
 
-    public void method2(){
+    public void method2() {
 
         int localvar2 = 60;
         System.out.println(" Local variable 2: " + localvar2);
@@ -23,7 +23,7 @@ public class Allvariable {
 
     public static void main(String[] args) {
         System.out.println(" static var in Object: " + Allvariable.statvar);
-        Allvariable varObj= new Allvariable();
+        Allvariable varObj = new Allvariable();
 
         System.out.println(varObj.instancevar);
         varObj.method1();
